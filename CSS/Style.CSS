@@ -1,0 +1,849 @@
+﻿@import url(normalize.css);
+@import url(12cols.css);
+@import url(fontello.css);
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('Fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),  url('Fonts/Montserrat-Bold.otf')  format('opentype'),
+	     url('Fonts/Montserrat-Bold.woff') format('woff'), url('Fonts/Montserrat-Bold.ttf')
+      format('truetype'), url('Fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('Fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),  url('Fonts/Montserrat-Light.otf')  format('opentype'),
+	     url('Fonts/Montserrat-Light.woff') format('woff'), url('Fonts/Montserrat-Light.ttf')  format('truetype'), url('Fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Thin';
+  src: url('Fonts/Montserrat-Thin.eot?#iefix') format('embedded-opentype'),  url('Fonts/Montserrat-Thin.otf')  format('opentype'),
+	     url('Fonts/Montserrat-Thin.woff') format('woff'), url('Fonts/Montserrat-Thin.ttf')  format('truetype'), url('Fonts/Montserrat-Thin.svg#Montserrat-Thin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font: 18px/1.5 'Montserrat-Light';
+}
+h2 {
+    font-size: 3.33rem;
+    font-family: 'Montserrat-Thin';
+    text-align: center;
+    text-transform: lowercase;
+    font-weight: normal;
+    margin: 40px 0;
+}
+h3 {
+    font-size: 2.66666rem;
+    font-family: 'Montserrat-Thin';
+    text-align: left;
+    text-transform: lowercase;
+    font-weight: normal;
+    margin: 50px 0 30px 0;
+}
+.fw {
+    width: 1150px;
+    margin: auto;
+}
+
+/*==========HAEDER================*/
+
+header.main {
+    height: 155px;   
+}
+.secondary {
+    border-bottom: 1px solid #989898;
+    text-align: center;
+}
+.logo {
+    margin-top: 60px;
+}
+.menu {
+    text-align: right;
+    margin-top: 48px;
+}
+.menu ul {
+    list-style: none;
+}
+.menu li {
+    display: inline-block; 
+}
+.menu a {
+    color: #989898;
+    text-transform: lowercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 17px;
+}
+
+/*==========WE ARE CLEMO================*/
+.we_are_clemo {
+    padding: 100px 0 80px 0;
+    text-transform: lowercase;
+    text-align: center;
+    background-color: #ffe1bd;
+}
+.we_are_clemo span {
+    font-size: 40px;
+    font-family: 'Montserrat-Bold';
+}
+.we_are_clemo p .prof {
+    font-size: 22px;
+    display: block;
+    font-family: 'Montserrat-Light';
+}
+.we_are_clemo .deco:before {
+    margin: 0 auto 10px;
+}
+.we_are_clemo .full_stop {
+    font-size: 3rem;
+}
+/*========Vertical Slider================*/
+.SlShow {
+  position: relative;
+  text-align: center;
+}
+.SlContainer {
+display: inline-block;
+}
+.SlShow .SlContainer {
+width:560px;
+height:300px;
+overflow:auto;
+position:relative;
+text-align: center;
+}
+.SlShow .SlContainer .Slider {
+  margin:0 auto;
+  width:540px;
+}
+.Slshow .Nav {
+margin-top: 10px;
+text-align: center;
+cursor:pointer;
+}
+.Nav {
+    position: absolute;
+    right: 3%;
+    top: 25%;
+}
+.SlShow .Nav .Dots {
+width:14px;
+height:14px;
+background:#ffe1bd;
+cursor:pointer;
+border-radius:14px;
+margin:15px 0px;
+border:1px solid black;
+}      
+.SlShow .Nav .Act {
+background: black;
+}
+.current_works a:after {
+    content:'';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin-top: 4px;
+}
+.menu.works {
+    text-align: center;
+}
+.menu a:hover, .menu .current a, .current_works a {
+    color: black;
+}
+ .current a:after {
+    content:'';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    margin-top: 4px;  
+}
+.services-article {
+    clear: both;
+    margin: 50px 0;
+}
+.services-article img {
+    float: left;
+}
+.services-wrap {
+    float: right;
+	width: 42.6%;  
+}
+.services-article:nth-child(odd) img {
+    float: right;
+}
+.services-article:nth-child(odd) .services-wrap {
+    float: left;
+}
+
+/*====GOLFINO AWARDS====*/
+
+.golf_awards {
+    text-align: center;
+}
+.golf_awards a {
+    text-decoration: none;
+    color: grey;
+    padding: 100px 20px;
+}
+.golf_awards img {
+    display: block;
+    margin: 100px auto 50px;  
+}
+
+/*====RELATED WORKS====*/
+
+.related_works {
+    background-color: #ffe1bd;
+    padding: 40px 0;
+}
+.related_works_slider a {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+}
+.related_works_list {
+    font-size: 36px;
+    font-family: 'Montserrat-Bold';
+    text-transform: lowercase;
+}
+.related_works_slider span {
+    display: block;
+}
+
+/*===Services more===*/
+
+.price {
+    background-color: black;
+    color: white;
+    padding: 80px 0;
+    text-transform: lowercase;
+    font-size: 30px;
+}
+.price a {
+    background-color: white;
+    margin-left: 100px;
+}
+.price div {
+    text-align: right;
+    display: inline-block;
+}
+.price .button:hover {
+    background-color: #ffe1bd;
+    border: #ffe1bd;
+}
+.we_create {
+    font-family: 'Montserrat-Bold';
+    text-transform: lowercase;
+    font-size: 40px;
+    margin-top: -10%;
+    margin-left: 80px;
+}
+.we_create_ln_more {
+    font-family: 'Montserrat-Bold';
+    text-transform: lowercase;
+    font-size: 40px;
+    margin-top: -75px;
+    margin-left: 80px;
+}
+.we_create span, .we_create_ln_more span {
+    display: block;
+}
+.stats .deco:before {
+    margin: 0 auto -10px;
+}
+.stats {
+    font-family: 'Montserrat-Bold';
+    font-size: 40px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.stats span {
+    font-family: 'Montserrat-Light';
+    font-size: 18px;
+    margin-top: -10px;
+}
+.deco:before {
+  content: '';
+  display: block;
+  width: 60px;
+  border-bottom: 2px solid black;
+  margin-bottom: 15px;
+}
+.services-link {
+    color: black;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+}
+.services-link:hover {
+    color: #ffe1bd;
+}
+.services-link span {
+    font-size: 40px;
+    display: block;
+    font-family: 'Montserrat-Bold';
+}
+.button {
+    color: black;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-size: 20px;
+    border: solid 1px gainsboro;
+    border-radius: 25px;
+    padding: 6px 30px;
+}
+.button:hover {
+    border-color: grey;
+    border-width: 2px;
+}
+.more {
+    text-align: center;
+    padding-bottom: 100px;
+}
+.button_black {
+    color: white;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-size: 20px;
+    border: solid 1px black;
+    border-radius: 25px;
+    padding: 6px 30px;
+    background-color: black;
+    margin: 0 0 0 0;
+    cursor: pointer;
+    }
+.button_black:hover {
+    color:black;
+    border: solid 1px #ffe1bd;
+    background-color: #ffe1bd; 
+}
+.wrap {
+  width: 1150px;
+  margin: auto;
+  text-align: justify;
+  font-size: 0;
+}
+.wrap img {
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+.wrap .golfino_link:nth-child(4) img, .wrap .golfino_link:nth-child(6) img, 
+.wrap .golfino_link:nth-child(10) img, .wrap .golfino_link:nth-child(12) img {
+  margin-top: -225px;
+}
+.wrap:after {
+  content:'';
+  display: inline-block;
+  width: 100%;
+}
+.golfino_awards span {
+    font-size: 2.25rem;
+    display: block;
+    font-family: 'Montserrat-Bold';
+}
+.golfino_link {
+    position: relative;
+    width: 364px;
+    display: inline-block; 
+}
+.golfino_awards {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    border: solid #ffe1bd;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    background-color: #ffe1bd;
+    padding-top: 50px;
+    display: none;
+    position: absolute;
+    bottom: 32px;
+    left: 32px;   
+}
+.golfino_awards .deco:before {
+    margin: 0 auto 10px;
+}
+ .golfino_link:hover .golfino_awards {
+    display: inline-block; 
+}
+
+/*BLOG*/
+
+.blog-article {
+    clear: both;
+    margin: 50px 0;
+}
+.blog-article img {
+    float: right;
+}
+.blog-wrap {
+    float: right;
+	width: 45%;  
+}
+.blog-article:nth-child(odd) img {
+    float: left;
+}
+.blog-article:nth-child(even) .blog-wrap {
+    float: left;
+}
+.blog-link {
+    color: black;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-size: 48px;
+    display: block;
+}
+.blog-link:hover {
+    color: #ffe1bd;
+}
+.blog-link span {
+    font-size: 48px;
+    display: block;
+    font-family: 'Montserrat-Bold';
+}
+.blog_design {
+    text-align: center;
+}
+.blog_date {
+    margin: 75px 0;
+}
+.blog_design article {
+    margin-left: 17%;
+    margin-top: 20px;
+    text-align: left;
+}
+.blog_design .deco:before {
+    margin: 40px 0 40px 0;
+}
+.blog_design span.deco:before {
+    margin: 0 0 -33px -40px;
+}
+.blog_design article p:nth-child(7), .blog_design article p:nth-child(9) {
+    margin-left: 30px;
+}
+.blog_design article p:nth-child(5) {
+    padding-bottom: 18px;
+}
+.comm {
+    margin-top: 100px;
+    margin-left: 60px;
+    font-size: 40px;
+    font-family: 'Montserrat-Bold';
+}
+.comm span {
+    display: block;
+    text-align: left;
+}
+.social_links {
+    margin: 80px 0 100px 0;
+}
+
+/*INSTAGRAM*/
+
+.instagram p {
+    font-size: 60px;
+    text-align: center;
+    text-transform: lowercase;
+    font-family: 'Montserrat-Thin';
+}
+.instagram {
+    margin: 20px 0;
+    text-align: center;
+}
+.instagram_foto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-shrink: 2;
+    margin-bottom: 50px;
+}
+.instagram_foto img {
+    margin: 0 3px;
+    height: 100%;
+    width: 19%;
+}
+
+/*TEAM*/
+
+.team_main-wrap {
+    position: relative; 
+}
+.team_main {
+    background-color: #ffe1bd;
+    margin: 50px 0 0 0;
+    padding: 40px 0 80px;
+}
+.team_list {
+    list-style: none;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0;
+}
+.team_list_item {
+    width: 20%;
+    display: inline-block;
+    margin: 0 20px;
+}
+.team_list_item img {
+    border-radius: 100%;
+}
+.team_list_name {
+    font: 2rem/1.05 'Montserrat-Bold';
+    text-transform: lowercase;
+    display: block;
+    margin-bottom: 15px;  
+}
+.team_list_position {
+    display: block;
+    text-transform: lowercase;  
+}
+.team_list_position.deco:before {
+    margin: 0 auto 10px;
+}
+.team_list_item {
+    vertical-align: top;
+}
+
+/*==========SLIDER=================*/
+
+.slideshow {
+  position: relative;
+}
+.slideshow .slidesContainer {
+margin:0 auto;
+width:1000px;
+height:100%;
+overflow:auto;
+position:relative;
+text-align: center;
+}
+.slideshow .slidesContainer .slide {
+  margin:0 auto;
+  width:1000px;
+  height:100%;
+}
+.control {
+  display:block;
+  position:absolute;
+  cursor: pointer;
+  color: #ffe1bd;
+}
+.slideshow .navigation {
+margin-top: 10px;
+text-align: center;
+cursor:pointer;
+}
+.slideshow .navigation .dot{
+display:inline-block;
+width:14px;
+height:14px;
+background:#ffe1bd;
+cursor:pointer;
+border-radius:14px;
+margin:0 10px;
+border:1px solid black;
+}       
+.slideshow .navigation .active{
+background: black;
+}
+
+/*=======SLIDER WITH DOTS ONLY===========*/
+
+.slshow {
+  position: relative;
+}
+.slshow .slContainer {
+margin:0 auto;
+width:1100px;
+height:100%;
+overflow:auto; /* разрешаем прокрутку */
+position:relative;
+text-align: center;
+}
+.slshow .slContainer .slider {
+  margin:0 auto;
+  width:1100px;
+  height:100%;
+}
+.slshow .nav {
+margin-top: 10px;
+text-align: center;
+cursor:pointer;
+}  
+.slshow .nav .dots {
+display:inline-block;
+width:14px;
+height:14px;
+background:white;
+cursor:pointer;
+border-radius:14px;
+margin:0 10px;
+border:1px solid black;
+}
+.slshow.related_works_slider .nav .dots {
+background:#ffe1bd;
+}
+.slshow.related_works_slider .nav .act {
+background:black;
+}        
+.slshow .nav .act {
+background: black;
+}
+
+/*==========Slider for page works_more===============*/
+
+.Slideshow {
+  position: relative;
+  text-align: center;
+}
+.Slideshow .SlidesContainer {
+margin:50px auto;
+width:1000px;
+height:100%;
+overflow:auto; /* разрешаем прокрутку */
+position:relative;
+text-align: center;
+}
+.Slideshow .SlidesContainer .Slide {
+  margin:0 auto;
+  width:1050px;
+  height:100%;
+}
+.Control {
+  cursor: pointer;
+  margin: 0 10px;
+  color: #989898;
+}
+.Slideshow .Navigation {
+margin-top: 10px;
+text-align: center;
+cursor:pointer;
+}  
+.Slideshow .Navigation .Dot{
+display:inline-block;
+width:14px;
+height:14px;
+background:white;
+cursor:pointer;
+border-radius:16px;
+margin:0 10px;
+border:1px solid black;
+}       
+.Slideshow .Navigation .Active{
+background: black;
+}
+.non-vis {
+    visibility: hidden;
+}
+.number_of_slider {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    color: #989898;
+}
+
+/*========================*/
+
+.client_name {
+    font: 2rem/1.05 'Montserrat-Bold';
+    text-transform: lowercase;
+    display: block;
+    margin-bottom: 15px;
+    text-align: right;
+}
+.client {
+    display: block;
+    text-transform: lowercase;
+    text-align: right;
+}
+.client_position.deco:before {
+    margin: 0 400px 10px;
+}
+.client, .client_says {
+    display: inline-block;
+}
+
+.client_says {
+    margin: 0 0 0 150px;
+}
+.client_fotos {
+    text-align: center;
+    padding: 80px 0 100px;
+}
+
+/*====CONTACTS=====*/
+
+.contacts {
+    background-color: black;
+    color: white;
+    padding: 40px 0 100px 0;
+}
+.icon-location, .adress {
+    display: inline-block;
+    vertical-align: top;
+}
+.adress {
+    width: 480px;
+}
+.social_nets {
+    border: solid 1px white;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 100%;
+    margin: 7px;
+    padding: 2px;
+    font-size: 20px;
+}
+.social_nets:hover {
+    background-color: #ffe1bd;
+}
+.message {
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-style: hidden;
+    border-bottom: 1px solid grey;
+}
+.cont {
+    margin-top: 20px;
+}
+.cont p {
+    margin-bottom: 40px;
+}
+.cont, .form {
+    display: inline-block;
+    vertical-align: top;
+}
+.form {
+    margin: 0 0 0 75px;
+    height: 450px;
+}
+.wrtform > input {
+    width: 450px;
+}
+.wrtform div input {
+    width: 450px;
+}
+.submit {
+    color: black;
+    text-transform: lowercase;
+    font-size: 20px;
+    border: solid 1px gainsboro;
+    border-radius: 25px;
+    padding: 6px 30px;
+    margin: 20px 0 50px 0;
+}
+.submit:hover {
+    background-color: #ffe1bd;
+    cursor: pointer;
+}
+.wrtform {
+    text-transform: lowercase;
+    color: grey;
+}
+.wrtform p {
+    margin-top: 50px;
+}
+.mes {
+    background-color: black;
+    color: white;
+    border-style: hidden;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    height: 80px;
+}
+label {
+    color: grey;
+    display: block;
+   visibility: hidden;
+}
+.is-vis {
+  visibility: visible;
+}
+.okmessage {
+	border: 5px solid #000;
+	padding: 20px;
+	display: none;
+}
+.okmessage p {
+    font-size: 30px;
+    margin: 10px 0;
+}
+.error {
+	outline: 2px solid red;
+}
+
+/*=========CONTACTS=======*/
+
+.message_wt {
+    height: 50px;
+    border-style: hidden;
+    border-bottom: 1px solid black;
+}
+.mes_wt {
+    border-style: hidden;
+    border-bottom: 1px solid black;
+    height: 80px;
+}
+.social_nets_wt {
+    border: solid 1px black;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border-radius: 100%;
+    margin: 7px;
+    padding: 2px;
+    font-size: 20px;
+}
+.social_nets_wt:hover {
+    background-color: #ffe1bd;
+    border: #ffe1bd;
+}
+.map img {
+    width: 100%;
+    height: 100%;
+}
+
+/*=========FOOTER=========*/
+
+footer.secondary {
+    text-align: center;
+    border-top: 1px solid #989898;
+    margin-top: 100px;
+}
+footer {
+    text-align: center;
+}
+.copyrights {
+    font-family: 'Montserrat-Bold'
+    
+}
+.copyrights small {
+    font-size: .77rem;
+    font-family: 'Montserrat-Light';
+    display: block;
+    text-transform: lowercase;
+    color: #696969;
+}
