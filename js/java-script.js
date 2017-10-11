@@ -1,3 +1,4 @@
+$(document).ready(function(){
 // Vertical Slider
 var Sli = $(".SlShow .SlContainer").children(".Slider");
 var Height = $(".SlShow .SlContainer").height();
@@ -95,10 +96,8 @@ for (j=0; j < slides.length; j++) {
     });
 
   function manageControls(position){
-    // Спрятать левую стрелку, если это левый слайд
     if(position==0){ $('#leftControl').hide() }
     else{ $('#leftControl').show() }
-    // Спрятать правую стрелку, если это последний слайд
     if(position==numberOfSlides-1){ $('#rightControl').hide() }
     else{ $('#rightControl').show() }
     };
@@ -295,4 +294,6 @@ function() {
         .find('label')
         .removeClass('is-vis');
     }
+});
+
 });
