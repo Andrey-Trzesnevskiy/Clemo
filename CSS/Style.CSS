@@ -54,6 +54,33 @@ h3 {
     width: 1150px;
     margin: auto;
 }
+/*=========UP DOWN=========*/
+#updown {
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  top: 155px;
+  left: 10px;
+  cursor: pointer;
+}
+ #updown.up {
+    background: url(../img/up.png) left top no-repeat;
+    background-color: #ffe1bd;
+    opacity: 0.5;
+ }
+ #updown.down {
+    background: url(../img/down.png) left top no-repeat;
+    background-color: #ffe1bd;
+    opacity: 0.5;
+ }
+ #updown.up:hover {
+    background-color: #ffe1bd;
+    opacity: 1;
+ }
+ #updown.down:hover {
+    background-color: #ffe1bd;
+    opacity: 1;
+ }
 
 /*==========HAEDER================*/
 
